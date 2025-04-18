@@ -12,8 +12,6 @@ Libraries:
     -shap
 
 ## Input Data
-
-The script expects the following CSV files to be present in the specified paths:
 1.  `/kaggle/input/playground-series-s4e10/train.csv`: The training data from the competition.
 2.  `/kaggle/input/playground-series-s4e10/test.csv`: The test data
 3.  `/kaggle/input/credit-risk-dataset-csv/credit_risk_dataset.csv`: An additional dataset used for augmenting the training data
