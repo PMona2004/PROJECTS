@@ -24,12 +24,12 @@ Libraries:
 6.  **Combined Data Preparation:** Concatenates the augmented training data and the test data into a single DataFrame `df` for consistent preprocessing.
 7.  **Feature Engineering:**
     - Creating new features:
-      loantoincome`: Ratio of `loan_amnt` to `person_income` (converted to categorical).
-      loan_percent_incometoincome`: Ratio of `loan_percent_income` to `person_income` (converted to categorical after ensuring numeric types).
-      person_age_to_person_income`: Ratio of `person_age` to `person_income` (converted to categorical).
-      person_emp_length_to_person_age`: Ratio of `person_emp_length` to `person_age` (converted to categorical).
-      loan_int_rate_to_loan_amnt`: Ratio of `loan_int_rate` to `loan_amnt` (converted to categorical).
-    - Converts specified columns (`person_age`, `person_income`, `person_emp_length`, `cb_person_cred_hist_length`, `loan_int_rate`, `loan_amnt`, `loan_percent_income`) to numeric types to ensure proper calculations.
+      - loantoincome`: Ratio of `loan_amnt` to `person_income` (converted to categorical).
+      - loan_percent_incometoincome`: Ratio of `loan_percent_income` to `person_income` (converted to categorical after ensuring numeric types).
+      - person_age_to_person_income`: Ratio of `person_age` to `person_income` (converted to categorical).
+      - person_emp_length_to_person_age`: Ratio of `person_emp_length` to `person_age` (converted to categorical).
+      - loan_int_rate_to_loan_amnt`: Ratio of `loan_int_rate` to `loan_amnt` (converted to categorical).
+    - Converting cols `person_age`, `person_income`, `person_emp_length`, `cb_person_cred_hist_length`, `loan_int_rate`, `loan_amnt`, `loan_percent_income` to numeric types.
 8.  **Categorical Encoding:**
     - Replaced categorical string values in `person_home_ownership`, `loan_intent`, `loan_grade`, and `cb_person_default_on_file` with numerical codes and converted them to the `category` data type.
     - `loan_int_rate` and `loan_percent_income` are converted to categorical types
@@ -79,10 +79,10 @@ Libraries:
 
 ## Notes
 
-GridSearchCV/RandomizedSearchCV could be used for improvement??.
-Feature engineering steps aim to create potentially more informative features from the existing ones. The effectiveness of these engineered features can be evaluated through their impact on the model's performance and feature importance analysis.
-Further feature engineering or better model selection?
-SHAP values help in understanding the contribution of each feature to the model's output for individual predictions and provide a global measure of feature importance.
-The `early_stopping_rounds` parameter helps to prevent overfitting
-The `use_best_model=True` parameter ensures that the model from the iteration with the best validation score is used for prediction.
+- GridSearchCV/RandomizedSearchCV could be used for improvement??.
+- Feature engineering steps aim to create potentially more informative features from the existing ones. The effectiveness of these engineered features can be evaluated through their impact on the model's - performance and feature importance analysis.
+- Further feature engineering or better model selection?
+- SHAP values help in understanding the contribution of each feature to the model's output for individual predictions and provide a global measure of feature importance.
+- The `early_stopping_rounds` parameter helps to prevent overfitting
+- The `use_best_model=True` parameter ensures that the model from the iteration with the best validation score is used for prediction.
 
