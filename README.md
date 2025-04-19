@@ -16,8 +16,8 @@ Libraries:
 2.  `/kaggle/input/playground-series-s4e10/test.csv`: The test data
 3.  `/kaggle/input/credit-risk-dataset-csv/credit_risk_dataset.csv`: An additional dataset used for augmenting the training data
 
-1.  **Import Libraries:** Imports all necessary python libraries
-2.  **Load Data:** Loads the training, test, and original credit risk datasets into pandas DataFrames
+1.  **Import Libraries:** Import all necessary python libraries
+2.  **Load Data:** Loading the training, test, and original credit risk datasets into pandas DataFrames
 3.  **Initial Data Exploration**
 4.  **Missing Value Handling** 
 5.  **Data Augmentation:** Concatenates the original dataset to the training dataset to increase the training data size. An `id` column is created for the combined training data.
