@@ -1,4 +1,4 @@
-## Overview
+## Overview - loan approval prediction (Haven't added for customer churn prediction yet!)
 
 The project performs a binary classification task to predict loan status (0 for non-default, 1 for default) using the CatBoost algorithm. You can get the dataset from the Playground Series Season 4 Episode 10 kaggle competition to train and evaluate a predictive model, and even find my notebook there. It includes data loading, preprocessing, feature engineering, model training using stratified k-fold cross-validation, and output file. Additional stuff are EDA and feature importance analysis using SHAP values.
 ## Requirements
